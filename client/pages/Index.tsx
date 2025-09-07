@@ -39,7 +39,7 @@ export default function Index() {
             FLOW Collective — men’s skincare, training, and nutrition.
           </h1>
           <p className="mt-4 text-lg text-muted-foreground sm:text-xl">
-            Clean routines, effective workouts, and dialed-in nutrition. Land here, get the essentials, then head to our Discord shop to grab what you need.
+            Clean routines, effective workouts, and dialed-in nutrition. Head to our Discord shop to grab what you need.
           </p>
           <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <Button asChild size="lg" className="h-12 rounded-lg bg-foreground text-background hover:bg-foreground/90">
@@ -61,16 +61,6 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Promise */}
-      <section className="container mx-auto px-4 pb-24">
-        <div className="js-reveal mx-auto max-w-3xl rounded-2xl border bg-background/60 p-8 text-center shadow-sm backdrop-blur">
-          <h2 className="text-2xl font-semibold">Minimal hype. Maximum results.</h2>
-          <p className="mt-2 text-muted-foreground">Everything selected for effectiveness and ease. When you’re ready, head to the shop and check out.</p>
-          <Button asChild size="lg" className="mt-6 h-12 rounded-lg bg-foreground text-background hover:bg-foreground/90">
-            <a href="/join" rel="noopener noreferrer">Shop on Discord</a>
-          </Button>
-        </div>
-      </section>
     </div>
   );
 }
