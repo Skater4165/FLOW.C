@@ -55,9 +55,9 @@ export default function Index() {
       {/* Categories */}
       <section id="categories" className="container mx-auto px-4 pb-20">
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          <CategoryCard title="Skincare" desc="Simple daily routines and bundles to keep your skin clear, hydrated, and sharp." image="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=60" />
-          <CategoryCard title="Workout" desc="Strength-focused programs and recovery tools for real progress." image="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=800&q=60" />
-          <CategoryCard title="Nutrition" desc="Cut, bulk, or maintain—plans and supplements to match your goals." image="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=60" />
+          <CategoryCard title="Skincare" desc="Simple daily routines and bundles to keep your skin clear, hydrated, and sharp." image="https://t3.ftcdn.net/jpg/07/89/78/42/240_F_789784291_RwzlZ8bXIfEjVvBIIleFuTpnhse0SyiS.jpg" />
+          <CategoryCard title="Workout" desc="Strength-focused programs and recovery tools for real progress." image="https://t3.ftcdn.net/jpg/02/26/50/62/240_F_226506291_imi0vFPQCeAfGGXnqkv3YuvZrJnhrdcP.jpg" />
+          <CategoryCard title="Nutrition" desc="Cut, bulk, or maintain—plans and supplements to match your goals." image="https://t4.ftcdn.net/jpg/16/51/92/77/240_F_1651927750_yjADGAU9YHtw5KP9XrrypZSegNRrCUsV.jpg" />
         </div>
       </section>
 
