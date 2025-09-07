@@ -120,17 +120,19 @@
     @apply bg-clip-text text-transparent;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-image: linear-gradient(90deg, #60a5fa, #818cf8, #a78bfa, #c084fc, #a78bfa, #818cf8, #60a5fa);
-    background-size: 200% 200%;
+    /* richer blue→indigo→violet→fuchsia sweep */
+    background-image: linear-gradient(90deg, #3b82f6, #6366f1, #8b5cf6, #a855f7, #8b5cf6, #6366f1, #3b82f6);
+    background-size: 300% 300%;
   }
   .animate-gradient {
-    animation: gradient-x 7s ease infinite;
+    animation: gradient-x 9s ease-in-out infinite;
   }
   .glow-text {
-    text-shadow: 0 0 6px rgba(96, 165, 250, 0.45), 0 0 14px rgba(129, 140, 248, 0.35), 0 0 24px rgba(192, 132, 252, 0.25);
-    filter: drop-shadow(0 0 6px rgba(96,165,250,0.35)) drop-shadow(0 0 14px rgba(129,140,248,0.25)) drop-shadow(0 0 22px rgba(192,132,252,0.2));
+    /* softer, aesthetic glow */
+    text-shadow: 0 0 4px rgba(99, 102, 241, 0.28), 0 0 10px rgba(168, 85, 247, 0.18);
+    filter: drop-shadow(0 0 6px rgba(99,102,241,0.15));
   }
-  .animate-glow { animation: glow-pulse 4.5s ease-in-out infinite; }
+  .animate-glow { animation: glow-pulse 6s ease-in-out infinite; }
 }
 
 @keyframes gradient-x {
@@ -140,6 +142,6 @@
 }
 
 @keyframes glow-pulse {
-  0%,100% { filter: drop-shadow(0 0 6px rgba(96,165,250,0.35)) drop-shadow(0 0 14px rgba(129,140,248,0.25)) drop-shadow(0 0 22px rgba(192,132,252,0.2)); }
-  50% { filter: drop-shadow(0 0 10px rgba(96,165,250,0.55)) drop-shadow(0 0 20px rgba(129,140,248,0.4)) drop-shadow(0 0 32px rgba(192,132,252,0.3)); }
+  0%,100% { filter: drop-shadow(0 0 6px rgba(99,102,241,0.15)); }
+  50% { filter: drop-shadow(0 0 12px rgba(168,85,247,0.25)); }
 }
