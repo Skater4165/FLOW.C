@@ -36,10 +36,10 @@ export default function Index() {
       <section className="container mx-auto px-4 py-20 sm:py-28">
         <div className="mx-auto max-w-3xl text-center">
           <h1 className="text-4xl font-extrabold tracking-tight sm:text-6xl">
-            Men's skincare, training, and nutrition—curated.
+            FLOW Collective — men’s skincare, training, and nutrition.
           </h1>
           <p className="mt-4 text-lg text-muted-foreground sm:text-xl">
-            Proven routines, gym programs, and diet plans. Land here, get the essentials, then jump to our Discord shop to buy what you need.
+            Clean routines, effective workouts, and dialed-in nutrition. Land here, get the essentials, then head to our Discord shop to grab what you need.
           </p>
           <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <Button asChild size="lg" className="h-12 rounded-lg bg-foreground text-background hover:bg-foreground/90">
@@ -55,9 +55,9 @@ export default function Index() {
       {/* Categories */}
       <section id="categories" className="container mx-auto px-4 pb-20">
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          <CategoryCard title="Skincare" desc="Simple daily routines and bundles to keep your skin clear, hydrated, and sharp." icon="🧴" />
-          <CategoryCard title="Workout" desc="Strength-focused programs and recovery tools for real progress." icon="🏋️" />
-          <CategoryCard title="Nutrition" desc="Cut, bulk, or maintain—plans and supplements to match your goals." icon="🥗" />
+          <CategoryCard title="Skincare" desc="Simple daily routines and bundles to keep your skin clear, hydrated, and sharp." image="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=60" />
+          <CategoryCard title="Workout" desc="Strength-focused programs and recovery tools for real progress." image="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=800&q=60" />
+          <CategoryCard title="Nutrition" desc="Cut, bulk, or maintain—plans and supplements to match your goals." image="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=60" />
         </div>
       </section>
 
@@ -75,16 +75,15 @@ export default function Index() {
   );
 }
 
-function CategoryCard({ title, desc, icon }: { title: string; desc: string; icon: string }) {
+function CategoryCard({ title, desc, image }: { title: string; desc: string; image: string }) {
   return (
-    <div className="js-reveal group relative overflow-hidden rounded-2xl border bg-card p-6 shadow-sm transition-transform duration-300 hover:-translate-y-0.5">
-      <div className="absolute inset-0 -z-10 bg-gradient-to-b from-transparent to-black/[0.03] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-      <div className="flex items-start gap-4">
-        <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-foreground/5 text-lg">{icon}</div>
-        <div>
-          <h3 className="text-lg font-semibold">{title}</h3>
-          <p className="mt-1 text-sm text-muted-foreground">{desc}</p>
-        </div>
+    <div className="js-reveal group relative overflow-hidden rounded-2xl border bg-card shadow-sm transition-transform duration-300 hover:-translate-y-0.5">
+      <div className="aspect-[16/9] overflow-hidden">
+        <img src={image} alt={`${title} graphic`} className="h-full w-full object-cover grayscale group-hover:grayscale-0 transition duration-500" />
+      </div>
+      <div className="p-6">
+        <h3 className="text-lg font-semibold">{title}</h3>
+        <p className="mt-1 text-sm text-muted-foreground">{desc}</p>
       </div>
     </div>
   );
