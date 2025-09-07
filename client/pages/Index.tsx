@@ -43,7 +43,7 @@ export default function Index() {
           </p>
           <div className="mt-8 flex items-center justify-center">
             <Button asChild size="lg" className="h-12 rounded-lg bg-foreground text-background hover:bg-foreground/90 px-8">
-              <a href="/join" rel="noopener noreferrer">Enter the Discord Shop</a>
+              <a href="https://discord.gg/zaCkp279E8" target="_blank" rel="noopener noreferrer">Enter the Discord Shop</a>
             </Button>
           </div>
         </div>
