@@ -19,5 +19,11 @@ export function createServer() {
 
   app.get("/api/demo", handleDemo);
 
+  // Redirect to Discord shop server (configure DISCORD_SHOP_URL)
+  app.get("/join", (_req, res) => {
+    const target = process.env.DISCORD_SHOP_URL || "https://discord.com";
+    res.redirect(302, target);
+  });
+
   return app;
 }
