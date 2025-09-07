@@ -41,12 +41,9 @@ export default function Index() {
           <p className="mt-4 text-lg text-muted-foreground sm:text-xl">
             Clean routines, effective workouts, and dialed-in nutrition. Head to our Discord shop to grab what you need.
           </p>
-          <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <Button asChild size="lg" className="h-12 rounded-lg bg-foreground text-background hover:bg-foreground/90">
+          <div className="mt-8 flex items-center justify-center">
+            <Button asChild size="lg" className="h-12 rounded-lg bg-foreground text-background hover:bg-foreground/90 px-8">
               <a href="/join" rel="noopener noreferrer">Enter the Discord Shop</a>
-            </Button>
-            <Button asChild variant="outline" size="lg" className="h-12 rounded-lg">
-              <a href="#categories">Browse categories</a>
             </Button>
           </div>
         </div>
