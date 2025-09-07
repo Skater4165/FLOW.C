@@ -36,7 +36,7 @@ export default function Index() {
       <section className="container mx-auto px-4 py-20 sm:py-28">
         <div className="mx-auto max-w-3xl text-center">
           <h1 className="text-4xl font-extrabold tracking-tight sm:text-6xl">
-            <span className="gradient-text animate-gradient">FLOW Collective</span> — men’s skincare, training, and nutrition.
+            <span className="gradient-text animate-gradient glow-text animate-glow">FLOW Collective</span> — men’s skincare, training, and nutrition.
           </h1>
           <p className="mt-4 text-lg text-muted-foreground sm:text-xl">
             Clean routines, effective workouts, and dialed-in nutrition. Head to our Discord shop to grab what you need.
